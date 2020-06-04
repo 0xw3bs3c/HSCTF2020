@@ -9,7 +9,7 @@
 
 The title of the challenge reminded me of zip comments. A comment is optional text information that is embedded in a Zip file.
 You can look for the comments using the commands ```zipdetails -v``` .
-[image]
+[image](https://github.com/0xw3bs3c/HSCTF2020/blob/arnab/forensics/comments/image1.png)
 
 Now all you have to do is keep unzipping and keep track of the comments. Also you can automate it by writing a python script using the zipfile module
 
