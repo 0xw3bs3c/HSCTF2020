@@ -8,19 +8,19 @@
 ### Answer 
 It was simple RSA with some Maths. 
 
-$N1 = P*Q$
-$N2 = Q*R$
-$N3 = R*P$
+![$N1 = P*Q$](https://render.githubusercontent.com/render/math?math=%24N1%20%3D%20P*Q%24)
+![$N2 = Q*R$](https://render.githubusercontent.com/render/math?math=%24N2%20%3D%20Q*R%24)
+![$N3 = R*P$](https://render.githubusercontent.com/render/math?math=%24N3%20%3D%20R*P%24)
 
 Then multiplying all three
 
-$N1*N2*N3 = (P*Q*R)^2$
+![$N1*N2*N3 = (P*Q*R)^2$](https://render.githubusercontent.com/render/math?math=%24N1*N2*N3%20%3D%20(P*Q*R)%5E2%24)
 
-$P =\frac{ \sqrt{(N1*N2*N3)}}{N1}$
+![$P =\frac{ \sqrt{(N1*N2*N3)}}{N1}$](https://render.githubusercontent.com/render/math?math=%24P%20%3D%5Cfrac%7B%20%5Csqrt%7B(N1*N2*N3)%7D%7D%7BN1%7D%24)
 
-$Q =\frac{ \sqrt{(N1*N2*N3)}}{N2}$
+![$Q =\frac{ \sqrt{(N1*N2*N3)}}{N2}$](https://render.githubusercontent.com/render/math?math=%24Q%20%3D%5Cfrac%7B%20%5Csqrt%7B(N1*N2*N3)%7D%7D%7BN2%7D%24)
 
-$R =\frac{ \sqrt{(N1*N2*N3)}}{N3}$
+![$R =\frac{ \sqrt{(N1*N2*N3)}}{N3}$](https://render.githubusercontent.com/render/math?math=%24R%20%3D%5Cfrac%7B%20%5Csqrt%7B(N1*N2*N3)%7D%7D%7BN3%7D%24)
 
 Once we have P, Q and R we will do standard RSA decryption for each of them, You can refer to the John Hammond [video]([https://www.youtube.com/watch?v=_lg2AEqRTjg](https://www.youtube.com/watch?v=_lg2AEqRTjg)) where he shows how he breaks a simple RSA.
 
