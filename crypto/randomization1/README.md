@@ -15,12 +15,12 @@ I heard LCGs were cool so I made my own
 Since I'm so generous you get a free number
 ```
 
-LCG (Linear congruential generator) is an algorithm for generating pseudo random numbers. Here is the [wiki link](https://en.wikipedia.org/wiki/Linear_congruential_generator). The basic formula for the sequence is [img1]
+LCG (Linear congruential generator) is an algorithm for generating pseudo random numbers. Here is the [wiki link](https://en.wikipedia.org/wiki/Linear_congruential_generator). The basic formula for the sequence is ![img1](../randomization1/imgs/image1.png)
 
 So all we have to do is find a and c. For that I opened up ghidra and decompiled the binary.
-The decompiled main function is [img3]
+The decompiled main function is ![img3](../randomization1/imgs/image3.png)
 
-The decompiled next function is [img2]
+The decompiled next function is ![img2](../randomization1/imgs/image2.png)
 
 From the next function we can clearly see that value of a is '%' and c is 0x41, So a = 37 and c = 65.
 But still we needed the modulo value. I assumed it was 256, but in order to be sure, I ran the binary a couple of times by a python script and then checked the max value and it was always less than 256. So now all we had to do is use the pwntools and write a final python script that will give us the result. Also one thing if you notice, you will be asked the number 10 times because there is do .. while condition wrapped. 
