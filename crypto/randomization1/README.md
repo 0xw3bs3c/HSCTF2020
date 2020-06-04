@@ -15,7 +15,7 @@ I heard LCGs were cool so I made my own
 Since I'm so generous you get a free number
 ```
 
-LCG (Linear congruential generator) is an algorithm for generating pseudo random numbers. Here is the [wiki link](https://en.wikipedia.org/wiki/Linear_congruential_generator). The basic formula for the sequence is [img1]
+LCG (Linear congruential generator) is an algorithm for generating pseudo random numbers. Here is the [wiki link](https://en.wikipedia.org/wiki/Linear_congruential_generator). The basic formula for the sequence is ![img1](./imgs/image1.png)
 
 So all we have to do is find a and c. For that I opened up ghidra and decompiled the binary.
 The decompiled main function is [img3]
